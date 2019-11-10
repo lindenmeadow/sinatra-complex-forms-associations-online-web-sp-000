@@ -1,11 +1,13 @@
 <h1>Create a New Owner</h1>
 
 <form action="/owners" method="POST">
-  <label>Name:</label>
-
+  <label>Owner Name:</label>
+    <br>
+    <input type="text" name="owner[name]">
+    
   <br>
 
-  <input type="text" name="owner[name]">
+  <p>Select an existing pet or create a new one below.</p>
 
   <h3>Existing Pets</h3>
   <% @pets.each do |pet| %>
